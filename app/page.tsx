@@ -89,22 +89,22 @@ export default function Home() {
           <div className={styles.featureCard}>
             <div className={styles.featureIcon}>🚚</div>
             <h3>Free Shipping</h3>
-            <p>Free delivery on orders over ₱1000</p>
+            <p>Free delivery basta naay kiss</p>
           </div>
           <div className={styles.featureCard}>
             <div className={styles.featureIcon}>↩️</div>
             <h3>Easy Returns</h3>
-            <p>30-day return policy for all items</p>
+            <p>5-minute return policy for all items</p>
           </div>
           <div className={styles.featureCard}>
             <div className={styles.featureIcon}>🔒</div>
             <h3>Secure Payment</h3>
-            <p>Your payment information is safe with us</p>
+            <p>Cash on Delivery rani</p>
           </div>
           <div className={styles.featureCard}>
             <div className={styles.featureIcon}>📞</div>
-            <h3>24/7 Support</h3>
-            <p>Get help whenever you need it</p>
+            <h3>24/7 nga comfort</h3>
+            <p>Tawagi rako para ma comfort ka</p>
           </div>
         </div>
       </section>
@@ -185,23 +185,23 @@ export default function Home() {
         <div className={styles.categoriesGrid}>
           <Link href="/products?category=Electronics" className={styles.categoryCard}>
             <div className={styles.categoryIcon}>📱</div>
-            <h3>Electronics</h3>
-            <p>Latest gadgets and tech</p>
+            <h3>Gadgets</h3>
+            <p>Mga kinawat na Cellphone</p>
           </Link>
           <Link href="/products?category=Clothing" className={styles.categoryCard}>
             <div className={styles.categoryIcon}>👕</div>
             <h3>Clothing</h3>
-            <p>Style and comfort</p>
+            <p>Ukay Ukay rajuy naa</p>
           </Link>
           <Link href="/products?category=Accessories" className={styles.categoryCard}>
             <div className={styles.categoryIcon}>🕶️</div>
             <h3>Accessories</h3>
-            <p>Complete your look</p>
+            <p>Basin OA ka, daghan mig accessories</p>
           </Link>
           <Link href="/products?category=Home" className={styles.categoryCard}>
             <div className={styles.categoryIcon}>🏠</div>
-            <h3>Home & Living</h3>
-            <p>For your space</p>
+            <h3>House</h3>
+            <p>Gapamaligya pud mig balay, pero dulaan</p>
           </Link>
         </div>
       </section>
@@ -209,20 +209,11 @@ export default function Home() {
       {/* Newsletter Section */}
       <section className={styles.newsletter}>
         <div className={styles.newsletterContent}>
-          <h2 className={styles.newsletterTitle}>Stay Updated</h2>
+          <h2 className={styles.newsletterTitle}>Coming Soon...</h2>
           <p className={styles.newsletterText}>
-            Subscribe to our newsletter for the latest products and exclusive deals
+            Hulat lang sa mga products, kay mamaligya mig sha
           </p>
-          <div className={styles.newsletterForm}>
-            <input 
-              type="email" 
-              placeholder="Enter your email"
-              className={styles.newsletterInput}
-            />
-            <button className={styles.newsletterButton}>
-              Subscribe
-            </button>
-          </div>
+          
         </div>
       </section>
     </div>
