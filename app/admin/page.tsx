@@ -14,12 +14,12 @@ export default function AdminLogin() {
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault()
     
-    // Simple authentication - in real app, this would connect to your backend
-    if (username === 'admin' && password === 'admin123') {
+    // TEMPORARY: Simple authentication to access admin panel
+    if (username === 'justcarl' && password === 'Carl122005') {
       localStorage.setItem('adminLoggedIn', 'true')
       router.push('/admin/dashboard')
     } else {
-      setError('Invalid credentials. Use admin/admin123')
+      setError('AYAWG NAG UTRUHA!')
     }
   }
 
@@ -28,12 +28,12 @@ export default function AdminLogin() {
       {/* Header */}
       <header className={styles.header}>
         <nav className={styles.nav}>
-          <Link href="/" className={styles.logo}>MyStore</Link>
+          <Link href="/" className={styles.logo}>CarlStore🏪</Link>
           <div className={styles.navLinks}>
             <Link href="/" className={styles.navLink}>Home</Link>
             <Link href="/products" className={styles.navLink}>Products</Link>
             <Link href="/cart" className={styles.navLink}>Cart</Link>
-            <Link href="/admin" className={styles.navLink}>Admin</Link>
+            <Link href="/admin" className={styles.navLink}>🔷</Link>
           </div>
         </nav>
       </header>
@@ -43,7 +43,7 @@ export default function AdminLogin() {
         <div className={styles.loginContainer}>
           <div className={styles.loginCard}>
             <h1 className={styles.loginTitle}>Admin Login</h1>
-            <p className={styles.loginSubtitle}>Access your store management panel</p>
+            <p className={styles.loginSubtitle}></p>
             
             <form onSubmit={handleLogin} className={styles.loginForm}>
               {error && <div className={styles.errorMessage}>{error}</div>}
@@ -83,9 +83,7 @@ export default function AdminLogin() {
               </button>
 
               <div className={styles.demoCredentials}>
-                <p><strong>Demo Credentials:</strong></p>
-                <p>Username: <code>admin</code></p>
-                <p>Password: <code>admin123</code></p>
+                <p><strong>Nganong naabot man ka dri? ulol</strong></p>
               </div>
             </form>
           </div>

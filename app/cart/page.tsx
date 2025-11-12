@@ -125,7 +125,7 @@ export default function CartPage() {
               {state.items.reduce((total, item) => total + item.quantity, 0)})
             </Link>
             <Link href="/admin" className={styles.navLink}>
-              Admin
+              👀
             </Link>
           </div>
         </nav>
@@ -417,11 +417,11 @@ export default function CartPage() {
                   </div>
                   <div className={styles.badge}>
                     <span className={styles.badgeIcon}>↩️</span>
-                    30-Day Returns
+                    5-minute Returns
                   </div>
                   <div className={styles.badge}>
                     <span className={styles.badgeIcon}>🚚</span>
-                    Free Shipping Over ₱1000
+                    Free Shipping Over ₱696969
                   </div>
                 </div>
               )}

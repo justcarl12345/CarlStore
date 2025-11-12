@@ -17,8 +17,9 @@ export interface IOrder extends Document {
   subtotal: number;
   shipping: number;
   total: number;
-  status: 'new' | 'completed';
+  status: 'new' | 'completed' | 'cancelled';
   orderNumber: string;
+  completedAt?: Date;
   createdAt: Date;
   updatedAt: Date;
 }
@@ -87,11 +88,22 @@ const OrderSchema: Schema = new Schema({
   },
   status: {
     type: String,
-    enum: ['new', 'completed'],
+    enum: ['new', 'completed', 'cancelled'],
     default: 'new'
+  },
+  completedAt: {
+    type: Date
   }
 }, {
   timestamps: true
+});
+
+// Auto-set completedAt when status changes to completed
+OrderSchema.pre('save', function(next) {
+  if (this.isModified('status') && this.status === 'completed' && !this.completedAt) {
+    this.completedAt = new Date();
+  }
+  next();
 });
 
 export default mongoose.models.Order || mongoose.model<IOrder>('Order', OrderSchema);

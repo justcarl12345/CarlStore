@@ -166,7 +166,7 @@ function Header() {
           <Link href="/cart" className={styles.navLink}>
             Cart ({getTotalItems()})
           </Link>
-          <Link href="/admin" className={styles.navLink}>Admin</Link>
+          <Link href="/admin" className={styles.navLink}>🤡</Link>
         </div>
       </nav>
     </header>
