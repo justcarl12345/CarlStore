@@ -3,7 +3,7 @@ import { CartProvider } from '@/context/CartContext'
 import { ErrorBoundary } from '@/components/ErrorBoundary'
 
 export const metadata = {
-  title: 'MyStore - E-commerce Platform',
+  title: 'CarlStore',
   description: 'A modern e-commerce website built with Next.js',
 }
 
